@@ -1,0 +1,9 @@
+opencv_python==4.5.2.54
+matplotlib==3.4.2
+awesome_streamlit==20200728.1
+numpy==1.19.5
+keras_nightly==2.5.0.dev2021032900
+streamlit==0.83.0
+keras==2.4.3
+Pillow==8.3.0
+tensorflow-cpu==2.5.0

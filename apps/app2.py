@@ -20,6 +20,12 @@ def detect_objects(our_image):
 
     # YOLO ALGORITHM
     net = cv2.dnn.readNet("apps/yolov3.weights", "apps/yolov3.cfg")
+    if not yolov3.weights.exists():
+        with st.spinner("Downloading model... this may take awhile! \n Don't stop it!"):
+            from GD_download import download_file_from_google_drive
+            download_file_from_google_drive('https://drive.google.com/file/d/1kQvKgAcfs0TR9vpJAwwyHKqm4CzSaoF_/view?usp=sharing', yolov3.weights)
+
+
 
     classes = []
     with open("apps/coco.names", "r") as f:
@@ -128,3 +134,4 @@ def write():
     with st.spinner("Loading  ..."):
         vision = object_main()
         st.markdown(vision)
+

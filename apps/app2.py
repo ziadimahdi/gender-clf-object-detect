@@ -25,7 +25,7 @@ def detect_objects(our_image):
     col1.pyplot(use_column_width=True)
 
     # YOLO ALGORITHM
-    net = cv2.dnn.readNet("yolov3.weights", "apps/yolov3.cfg")
+    net = cv2.dnn.readNet("yolov3", "apps/yolov3.cfg")
     if not yolov3.weights.exists():
         with st.spinner("Downloading model... this may take awhile! \n Don't stop it!"):
             from GD_download import download_file_from_google_drive

@@ -6,6 +6,12 @@ import matplotlib.pyplot as plt
 import awesome_streamlit as ast
 from PIL import *
 from .cv2 import *
+import urllib.request
+url = 'https://github.com/ziadimahdi/Gender-Classification-Object-Detection/blob/main/apps/yolov3.weights'
+yolov3 = url.split('/')[-1]
+
+urllib.request.urlretrieve(url, yolov3)
+
 
 def detect_objects(our_image):
     st.set_option('deprecation.showPyplotGlobalUse', False)
@@ -19,7 +25,7 @@ def detect_objects(our_image):
     col1.pyplot(use_column_width=True)
 
     # YOLO ALGORITHM
-    net = cv2.dnn.readNet("apps/yolov3.weights", "apps/yolov3.cfg")
+    net = cv2.dnn.readNet("yolov3.weights", "apps/yolov3.cfg")
     if not yolov3.weights.exists():
         with st.spinner("Downloading model... this may take awhile! \n Don't stop it!"):
             from GD_download import download_file_from_google_drive

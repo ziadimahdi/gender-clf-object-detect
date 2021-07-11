@@ -1,2 +1,2 @@
-apt-get update -y
-apt-get install libglib2.0-0
+sudo apt-get update
+sudo apt-get install libglib2.0-0

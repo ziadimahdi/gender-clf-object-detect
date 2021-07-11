@@ -1,6 +1,6 @@
 streamlit==0.83.0
 awesome_streamlit==20200728.1
-numpy==1.19.5
+numpy
 keras_nightly==2.5.0.dev2021032900
 matplotlib==3.4.2
 opencv_python==4.5.2.54

@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import awesome_streamlit as ast
 from PIL import *
-from .cv2 import *
+from cv2 import *
 import urllib.request
 url = 'https://github.com/ziadimahdi/Gender-Classification-Object-Detection/blob/main/apps/yolov3.weights'
 yolov3 = url.split('/')[-1]

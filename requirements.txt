@@ -3,7 +3,7 @@ awesome_streamlit==20200728.1
 numpy
 keras_nightly==2.5.0.dev2021032900
 matplotlib==3.4.2
-opencv_python==4.5.2.54
+opencv-python
 Pillow==8.3.1
 tensorflow-gpu==2.3
 keras==2.3.1

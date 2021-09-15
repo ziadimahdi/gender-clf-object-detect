@@ -28,7 +28,7 @@ def main():
     st.sidebar.title("About")
     st.sidebar.info(
         """
-        This app is maintained by Marc Skov Madsen. You can learn more about this app at
+        This app is maintained by ZIADI MAHDI. You can learn more about this app at
         [GitHub](https://github.com/ziadimahdi/Gender-Classification-Object-Detection.git).
 """
     )
